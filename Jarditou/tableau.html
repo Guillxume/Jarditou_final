@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--Head, contient toutes les infos pour appeler la page CSS, rendre le site responsive une fois qu'on s'y
+intéressera, utf-8 pour le charset permet de voir les accents, le title sert au référencement-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jarditou, le jardinage pour tous!</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/styles/fichier.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+</head>
+<!--Fin du Header début du body et donc du contenu visible du site-->
+
+<body>
+    <!--Le Header sert pour le logo et le menu-->
+    <div class="row">
+    <header>
+       
+
+
+     
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<img src="images/jarditou_logo.png" class="img-fluid col-2" alt="Logo Jarditou" title="Logo jarditou">
+
+    <a class="navbar-brand" href="index.html">Rien sur le Jardin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Accueil
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tableau.html">Produits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+  </div>
+</nav>
+
+    </header>
+    </div>
+        <hr>
+<div class="row">
+                <img id = "promo" src="images/promotion.jpg" class="img-fluid" alt="Image responsive" title="Image responsive" width="100%">
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <!-- Tableau des produits commence ici !-->
+        <table class="table table-image">
+          <!--tête du tableau !-->
+          <thead>
+            <tr>
+              <th scope="col">Numéro d'article</th>
+              <th scope="col">Image</th>
+              <th scope="col">Nom de l'article</th>
+              <th scope="col">Marque</th>
+              <th scope="col">Prix</th>
+              <th scope="col">Stocks</th>
+            </tr>
+          </thead>
+          <!-- Corps du tableau !-->
+          <tbody>
+            <tr>
+              <th scope="row">666333</th>
+              <td class="w-25">
+                  <img src="photos/7.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+              </td>
+              <td>No cold time ever</td>
+              <td>Panzer</td>
+              <td>349€</td>
+              <td>En cours de livraison</td>
+            </tr>
+            <tr>
+              <th scope="row">91929394</th>
+              <td class="w-25">
+                  <img src="photos/8.jpg"class="img-fluid img-thumbnail" alt="Sheep">
+              </td>
+              <td>Ultimate J-45</td>
+              <td>Gênant</td>
+              <td>0,66€</td>
+              <td>Sur commande(et heureusement).</td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td class="w-25">
+                  <img src="photos/11.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+              </td>
+              <td>BBBQE(Best Barbecue Ever)</td>
+              <td>Modestie</td>
+              <td>60.000€</td>
+              <td>Un seul et unique</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td class="w-25">
+                  <img src="photos/12.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+              </td>
+              <td>Sauron</td>
+              <td>Mordor</td>
+              <td>Un anneau unique</td>
+              <td>Via échange</td>
+            </tr>
+            <tr>
+              <th scope="row">96</th>
+              <td class="w-25">
+                  <img src="photos/13.jpg"class="img-fluid img-thumbnail" alt="Sheep">
+              </td>
+              <td>Brouette Discale</td>
+              <td>Artusamak</td>
+              <td>69€</td>
+              <td>Disponible sous ordonnance.</td>
+            </tr>
+          </tbody>
+        </table>   
+    </div>
+  </div>
+  <div class="content"></div>
+  <footer id="social" class="row">
+    <div class="sozial col-xs-12 col-sm-6 col-sm-push-6">
+      <ul class="row">
+        <li class="col-xs-6 col-sm-2">
+          <a href="#">
+            <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_facebook-128.png">
+          </a>
+        </li>
+        <li class="col-xs-6 col-sm-2">
+          <a href="#">
+            <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-128.png">
+          </a>
+        </li>
+        <li class="col-xs-6 col-sm-2">
+          <a href="#">
+            <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-128.png">
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="copyright col-xs-12 col-sm-3 col-sm-pull-6">
+      <p> &copy; Guillxtine </p>
+    </div>
+  
+  </footer>
+</div>
+</div>
+        <script src="assets/js/contact.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>

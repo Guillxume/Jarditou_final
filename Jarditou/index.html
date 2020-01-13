@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--Head, contient toutes les infos pour appeler la page CSS, rendre le site responsive une fois qu'on s'y
+intéressera, lang fr ou utf-8 pour le charset permet de voir les accents, le title sert au référencement et pour l'assistant vocal (par exemple pour décrire à une personne aveugle ce qu'il y a sur l'image)-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jarditou, le jardinage pour tous!</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/styles/fichier.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+</head>
+<!--Fin du Header début du body et donc du contenu visible du site-->
+
+<body>
+    <!--Le Header sert pour le logo et le menu-->
+    <div class="row">
+    <header>
+       
+
+
+     
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<img src="images/jarditou_logo.png" class="img-fluid col-2" alt="Logo Jarditou" title="Logo jarditou">
+
+    <a class="navbar-brand" href="index.html">Rien sur le Jardin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Accueil
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tableau.html">Produits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+  </div>
+</nav>
+
+    </header>
+    </div>
+        <hr>
+
+    <!--Fin du header, début du "corps" du site-->
+
+
+    <!-- Contenu du site-->
+
+    <!--Carousel!-->
+
+ <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+    
+      <div class="carousel-item active" style="background-image: url('photos/7.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">Barbecue "No cold time ever"</h2>
+          <p class="lead">Devenez le roi de la flamme ( et de la merguez.)</p>
+        </div>
+      </div>
+    
+      <div class="carousel-item" style="background-image: url('photos/11.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">Ultimate J-45</h2>
+          <p class="lead">A maîtrise ultime, barbecue ultime.</p>
+        </div>
+      </div>
+     
+      <div class="carousel-item" style="background-image: url('photos/12.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">Brouette Discale</h2>
+          <p class="lead">Approuvé par la medecine du travail</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+  </div>
+
+
+
+
+
+    <!--section 1 dédiée aux articles-->
+    <section id="articles" class="row-justify-content-start">
+        <div class="col-7">
+            <article>
+                <h2>L'Entreprise</h2>
+
+                <p>Notre entreprise familiale met tout son savoir-faire à votre disposition dans le domaine du jardin et du paysagisme.
+                </p>
+                <p>Créée il y a 3 jours , notre entreprise vend fleurs, arbustes, matériel à main et motorisés.</p>
+                <p>Implantés à Amiens, nous intervenons dans tout le département de la Somme : Albert, Doullens, Péronne, Abbeville, Corbie, Marseille, Strasbourg.</p>
+            </article>
+            <article>
+                <h2>Qualité</h2>
+                <p>Nous mettons à votre disposition un service personnalisé, avec 400 interlocuteurs durant tout votre projet.
+                </p>
+                <p>Vous serez séduit par notre expertise, nos compétences et notre sérieux visible sur notre site</p>
+            </article>
+            <article>
+                <h2>Devis Gratuit</h2>
+                <p>Vous pouvez bien sûr contacter pour de plus amples informations ou pour une demande d’intervention. Vous souhaitez un devis ? Nous vous le réalisons gratuitement.(si il est accepté)</p>
+            </article>
+        </div>
+
+        <!--Aside pour la colonne de droite !-->
+        <aside class="col-4">
+            <h2>Pire article du mois</h2>
+            <a href="tableau.html"><img src="photos/8.jpg"></a>
+            <p> Ultimate J-45, la victoire de la déception. </p>
+        </aside>
+    </section>
+
+         <img id = "promo" src="images/promotion.jpg" class="img-fluid" alt="Image responsive" title="Image responsive" width="100%">
+    <!--footer avec les infos que personne ne lit-->
+
+    <!-- pour aller vers les réseaux sociaux -->
+<div class="content"></div>
+  <footer id="social" class="row">
+    <div class="sozial col-xs-12 col-sm-6 col-sm-push-6">
+      <ul class="row">
+        <li class="col-xs-6 col-sm-2">
+          <a href="#">
+            <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_facebook-128.png">
+          </a>
+        </li>
+        <li class="col-xs-6 col-sm-2">
+          <a href="#">
+            <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-128.png">
+          </a>
+        </li>
+        <li class="col-xs-6 col-sm-2">
+          <a href="#">
+            <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-128.png">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Copyright !-->
+    <div class="copyright col-xs-12 col-sm-3 col-sm-pull-6">
+      <p> &copy; Guillxtine </p>
+    </div>
+    
+  </footer>
+</div>
+        <script src="assets/js/contact.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+<!--Fin du site, merci d'avoir décortiquer mon code les affreux-->
+
+</html>
