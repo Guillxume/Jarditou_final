@@ -46,6 +46,7 @@ Je lui donne un texte à l'intérieur, une couleur et la taille de la font */
             erreurNom.style.fontSize = "20px";
         
         }
+		
     }
     /* Même chose avec le prénom */
     if(!regexPrenom.test(prenom.value))
@@ -101,7 +102,7 @@ Je lui donne un texte à l'intérieur, une couleur et la taille de la font */
     {
         event.preventDefault();
         let missSexe = document.getElementById('sexe');
-        missSexe.textContent = "Merci de renseigner cette information.";
+        missSexe.textContent = "Information requise.";
 		missSexe.style.color = "#fba";
         missSexe.style.fontSize = "20px"; 
     }

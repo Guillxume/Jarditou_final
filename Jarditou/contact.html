@@ -9,6 +9,7 @@
     <title>Jarditou, le jardinage pour tous!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles/fichier.css">
+	<link rel="stylesheet" href="assets/css/styles/main.scss">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
 </head>
 
@@ -55,67 +56,85 @@
 
     <div class="form-group">
       <!-- Les spans sont cachées et servent à signaler une erreur, elles sont appelées dans le js par leur nom en fonction de l'erreur !-->
+		<div class="row">
                       <span id="missNom"></span>
-                <br/>
+		</div>
+                <div class="row">
                 <label for="nom">Votre nom* :</label>
                 <!-- minlength oblige l'utilisateur à entrer minimum 2 caractères et au maximum 102.!-->
                 <input class="form-control" type="text" name="nom" required id="nom" minlength="2" maxlength="102" />
-                <br/>
-                <span id="missPrenom">
-                  
-                </span>
-                <br/>
+					</div>
+                <div class="row">
+                <span id="missPrenom"></span>
+					</div>
+                <div class="row">
                 <label for="prenom">Votre prénom* : </label>
                 <input class="form-control" type="text" name="prenom" required id="prenom" minlength="2" maxlength="102" />
-                <br/>
-
-                <p>Sexe* :</p>
+				</div>
+                
+		
+                <div class="row">
+					    <span id="sexe" class="col-2">Sexe* : </span>
+		</div>
+		<div class="row">
                 <div class="form-check">
+					
+					
 
-                     <span id="sexe"></span><br/>
+                 
                     <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Féminin" required id="fem" />
-                    <label class="form-check-label" for="fem">Féminin  </label>
+                    <label class="form-check-label col-2" for="fem">Féminin </label>
                 </div>
                 <div class="form-check">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Masculin" required id="mas"/>
-                        <label class="form-check-label" for="mas">Masculin  </label>
+                        <label class="form-check-label col-2" for="mas">Masculin  </label>
                 </div>
                  <div class="form-check">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Masculin" required id="other"/>
-                        <label class="form-check-label" for="other">Autre  </label>
+                        <label class="form-check-label col-2" for="other">Autre  </label>
                 </div> 
-                <br/>
+		</div>
+	  
+				
+                <div class="row">
 
-                <span id="missBirth"></span> <br>
+                <span id="missBirth"></span>
+					</div>
+					<div class="row">
                 <label for="birth">Date Naissance* :</label>
-                <br>
+                
                 <!--Le type date permet déjà une vérification html, il faut cependant traité le cas où l'utilisateur ne le remplit pas avec le JS !--> 
 
                 <input class="form-control" type="date" name="Date" required id="birth"/><br/>
+		</div>
                 
                 
 
 
-
+				<div class="row">
                 <span id="missCp"> </span>
-                <br>
+			</div>
+                
                 <label for="postal">Code postal : </label>
-                <input class="form-control" type="text" name="CodePostal" id="postal" required /><br/>
+                <input class="form-control" type="text" name="CodePostal" id="postal" required />
 
                 <label for="adresse">Adresse : </label>
-                <input class="form-control" type="text" name="Adresse" id="adresse" minlength="3" /><br/>
+                <input class="form-control" type="text" name="Adresse" id="adresse" minlength="3" />
                 
                 <label for="ville">Ville :</label> 
-                <input class="form-control" type="text" name="Ville" id="ville" minlength="3" /><br/>
-                <span id="missEmail"></span>
-                <br/>                
+                <input class="form-control" type="text" name="Ville" id="ville" minlength="3" />
+                <div class="row">
+				<span id="missEmail"></span>
+		</div>
+					
+		
                 <label for="email">Email* : </label>
                 <input class="form-control" type="email" name="Email" required placeholder="ecrisbientonmail@stp.com" id="email"/>
-                <br/> 
-
-            </div>
+					
+            
+           
         <fieldset>
-          <span id="missDemande"></span><br/>
+          <span id="missDemande"></span>
             <legend>Votre demande</legend>
             <div class="form-group">
                 <label for="sujet">Sujet* : </label>
@@ -124,20 +143,21 @@
                         <option value="1"> Réclamation (encore) </option>
                         <option value="2"> Devis </option>
                         <option value="1"> Divers </option>
-                    </select><br/>
+                    </select>
                 <label for="demande">Votre demande* :</label>
-                <textarea name="Questions" required id="demande" rows="1"></textarea><br/>
+                <textarea name="Questions" required id="demande" rows="1"></textarea>
             </div>
         </fieldset>
         <div class="form-group">
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" name="confirmation" required id="confirmation">
                 <label class="form-check-label" for="confirmation" required>J'accepte le traitement informatique de ce forumlaire.</label>
-          </div> <br>
+          </div> 
             <input class="btn" type="submit" name="submit" id="bouton" value="Envoyer"/>
             <input class="btn" type="reset" name="reset" value="Annuler"/>
         </div>
-   </form>
+	  </div>
+	</form>
 </div>
 
     <div class="content">

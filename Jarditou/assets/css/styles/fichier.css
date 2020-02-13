@@ -53,7 +53,6 @@ nav .navbar-brand {
 .col-4 {
   display: flex;
   flex-direction: column;
-  background-color: gray;
   height: 25em;
   background-color: white;
   border-radius: 2% 2% 2% 2%;
@@ -110,7 +109,6 @@ nav .navbar-brand {
 
 /* Gestion de la section qui contient les articles */
 #articles {
-  background-color: lightgray;
   height: 100vh;
   width: 92%;
   margin-left: 5%;
@@ -118,7 +116,7 @@ nav .navbar-brand {
   padding-top: 5%;
   padding-left: 5%;
   border-radius: 2% 2% 2% 2%;
-  box-shadow: 2px 0.5px 2px 1px black;
+  box-shadow: 0px 0.5px 1px 4px black;
 }
 
 #promo {
@@ -195,11 +193,17 @@ thead {
   font-size: 15px;
 }
 
-#contact button[type=submit]:hover {
+.btn[type=submit]:hover {
   background: #43A047;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn[type=reset]:hover{  background:red;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 
 #contact button[type=submit]:active {
