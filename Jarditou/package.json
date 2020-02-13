@@ -1,0 +1,11 @@
+{
+  "name": "jarditou",
+  "version": "1.0.0",
+  "description": "\"\"",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/css/styles/main.scss:./assets/css/styles/fichier.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

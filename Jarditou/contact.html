@@ -31,10 +31,10 @@
                 <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="tableau.html">Produits</a>
+            <a class="nav-link" href="produits.html">Produits</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
 
@@ -73,15 +73,15 @@
                 <div class="form-check">
 
                      <span id="sexe"></span><br/>
-                    <input class="form-check-input" type="radio" name="Sexe" value="Féminin" required id="fem"/>
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Féminin" required id="fem" />
                     <label class="form-check-label" for="fem">Féminin  </label>
                 </div>
                 <div class="form-check">
-                        <input class="form-check-input" type="radio" name="Sexe" value="Masculin" required id="mas"/>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Masculin" required id="mas"/>
                         <label class="form-check-label" for="mas">Masculin  </label>
                 </div>
                  <div class="form-check">
-                        <input class="form-check-input" type="radio" name="Sexe" value="Masculin" required id="other"/>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Masculin" required id="other"/>
                         <label class="form-check-label" for="other">Autre  </label>
                 </div> 
                 <br/>
@@ -91,7 +91,7 @@
                 <br>
                 <!--Le type date permet déjà une vérification html, il faut cependant traité le cas où l'utilisateur ne le remplit pas avec le JS !--> 
 
-                <input class="form-control" type="date" name="birth" required id="birth"/><br/>
+                <input class="form-control" type="date" name="Date" required id="birth"/><br/>
                 
                 
 
@@ -100,35 +100,33 @@
                 <span id="missCp"> </span>
                 <br>
                 <label for="postal">Code postal : </label>
-                <input class="form-control" type="text" name="postal" id="postal" required /><br/>
+                <input class="form-control" type="text" name="CodePostal" id="postal" required /><br/>
 
                 <label for="adresse">Adresse : </label>
-                <input class="form-control" type="text" name="adresse" id="adresse" minlength="3" /><br/>
+                <input class="form-control" type="text" name="Adresse" id="adresse" minlength="3" /><br/>
                 
                 <label for="ville">Ville :</label> 
-                <input class="form-control" type="text" name="ville" id="ville" minlength="3" /><br/>
+                <input class="form-control" type="text" name="Ville" id="ville" minlength="3" /><br/>
                 <span id="missEmail"></span>
                 <br/>                
                 <label for="email">Email* : </label>
-                <input class="form-control" type="email" name="email" required placeholder="ecrisbientonmail@stp.com" id="email"/>
+                <input class="form-control" type="email" name="Email" required placeholder="ecrisbientonmail@stp.com" id="email"/>
                 <br/> 
 
             </div>
-        </fieldset>
-
         <fieldset>
           <span id="missDemande"></span><br/>
             <legend>Votre demande</legend>
             <div class="form-group">
                 <label for="sujet">Sujet* : </label>
-                    <select class="form-control" name="sujet" required id="sujet">
+                    <select class="form-control" name="Sujet" required id="sujet">
                         <option value="" selected> - </option>    
                         <option value="1"> Réclamation (encore) </option>
                         <option value="2"> Devis </option>
                         <option value="1"> Divers </option>
                     </select><br/>
                 <label for="demande">Votre demande* :</label>
-                <textarea name="demande" required id="demande" rows="1"></textarea><br/>
+                <textarea name="Questions" required id="demande" rows="1"></textarea><br/>
             </div>
         </fieldset>
         <div class="form-group">
@@ -136,8 +134,8 @@
                 <input class="form-check-input" type="checkbox" name="confirmation" required id="confirmation">
                 <label class="form-check-label" for="confirmation" required>J'accepte le traitement informatique de ce forumlaire.</label>
           </div> <br>
-            <input class="btn" type="submit" id="bouton" value="Envoyer"/>
-            <input class="btn" type="reset" value="Annuler"/>
+            <input class="btn" type="submit" name="submit" id="bouton" value="Envoyer"/>
+            <input class="btn" type="reset" name="reset" value="Annuler"/>
         </div>
    </form>
 </div>
