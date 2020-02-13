@@ -8,7 +8,7 @@ const demande = document.getElementById('demande');
 const mas = document.getElementById('mas');
 const fem = document.getElementById('fem');
 
-/* Les regex afin de veiller au bon remplissage du formulaire */
+/* Les regex afin de veiller au bon remplissage du formulaire (oui j'ai forcé un peu.) */
 const regexNom = /^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ_\s-]+$/;
 const regexPrenom =  /^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ_\s-]+$/;
 const regexEmail = /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/;
