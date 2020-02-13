@@ -14,9 +14,7 @@ const regexPrenom =  /^[a-zA-Z]+$/;
 const regexEmail = /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/;
 const regexCp = /[0-9]{5}|^$/;
 
-/* le bouton déclenche la fonction au clic */
 
-bouton.addEventListener('click', verification);
 
 /* La fonction qui vérifie tout le formulaire */
 function verification(event)
@@ -48,6 +46,9 @@ Je lui donne un texte à l'intérieur, une couleur et la taille de la font */
         }
 		
     }
+    else{         let erreurNom = document.getElementById('missNom');
+        erreurNom.textContent = "";
+  }
     /* Même chose avec le prénom */
     if(!regexPrenom.test(prenom.value))
     {
@@ -68,6 +69,11 @@ Je lui donne un texte à l'intérieur, une couleur et la taille de la font */
             erreurPrenom.style.fontSize = "20px";
         }
     }
+    else{
+        let erreurPrenom = document.getElementById('missPrenom');
+        erreurPrenom.textContent = "";
+
+ }
     /* La regex pour le mail n'est pas la même que les prénoms : on lui demande de vérifier la présence d'une arobase, et de caractères qui la suivent. */
     if(!regexEmail.test(email.value))
     {
@@ -88,6 +94,9 @@ Je lui donne un texte à l'intérieur, une couleur et la taille de la font */
             erreurEmail.style.fontSize = "20px";
         }
     }
+    else{         let erreurEmail = document.getElementById('missPrenom');
+    erreurEmail.textContent = "";
+ }
 
     if(demande.validity.valueMissing)
     {
@@ -97,6 +106,9 @@ Je lui donne un texte à l'intérieur, une couleur et la taille de la font */
         erreurDemande.style.color = "#fba";
         erreurDemande.style.fontSize = "20px";
     }
+    else{         let erreurDemande = document.getElementById('missPrenom');
+    erreurDemande.textContent = "";
+ }
 /* Si aucun choix n'a été fait au bouton radio, renvoie une erreur */
     if(mas.validity.valueMissing && fem.validity.valueMissing && other.validity.valueMissing)
     {
@@ -106,6 +118,11 @@ Je lui donne un texte à l'intérieur, une couleur et la taille de la font */
 		missSexe.style.color = "#fba";
         missSexe.style.fontSize = "20px"; 
     }
+    else{ 
+        let missSexe = document.getElementById('sexe');
+        missSexe.textContent = "";
+
+    }
 /* Même chose avec la date */
     if(birth.validity.valueMissing)
     {
@@ -114,6 +131,10 @@ Je lui donne un texte à l'intérieur, une couleur et la taille de la font */
     	missBirth.textContent= "Date de naissance requise.";
  		missBirth.style.color = "#fba";
         missBirth.style.fontSize = "20px"; 
+    }
+    else{ 
+        let missBirth = document.getElementById('missBirth');
+        missBirth.textContent = "";
     }
 
     if(!regexCp.test(postal.value))
@@ -127,4 +148,11 @@ Je lui donne un texte à l'intérieur, une couleur et la taille de la font */
             erreurCp.style.fontSize = "20px"; 
         
     }
+    else{ 
+        let missSexe = document.getElementById('sexe');
+        erreurCp.textContent = "";
+    }
 }
+/* le bouton déclenche la fonction au clic */
+
+bouton.addEventListener('click', verification);
