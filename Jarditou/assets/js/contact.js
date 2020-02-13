@@ -1,20 +1,18 @@
 /* On attribue aux variables la valeur des champs du formulaire */
 
-const bouton = document.getElementById('bouton');
-const nom = document.getElementById('nom');
-const prenom = document.getElementById('prenom');
-const email = document.getElementById('email');
-const demande = document.getElementById('demande');
-const mas = document.getElementById('mas');
-const fem = document.getElementById('fem');
+const   bouton = document.getElementById('bouton'),
+        nom = document.getElementById('nom'),
+        prenom = document.getElementById('prenom'),
+        email = document.getElementById('email'),
+        demande = document.getElementById('demande'),
+        mas = document.getElementById('mas'),
+        fem = document.getElementById('fem');
 
 /* Les regex afin de veiller au bon remplissage du formulaire (oui j'ai forcé un peu.) */
-const regexNom = /^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ_\s-]+$/;
-const regexPrenom =  /^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ_\s-]+$/;
-const regexEmail = /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/;
-const regexCp = /[0-9]{5}|^$/;
-
-
+        regexNom = /^[/^[\wÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ_\s-]+$/i,
+        regexPrenom =  /^[\wÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ_\s-]+$/i,
+        regexEmail = /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/,
+        regexCp = /[0-9]{5}|^$/;
 
 /* La fonction qui vérifie tout le formulaire */
 function verification(event)
@@ -36,7 +34,6 @@ Je lui donne un texte à l'intérieur, une couleur et la taille de la font */
         else
         	/* SINON, la Regex n'est pas respectée*/
         {
-        
             event.preventDefault();
             let erreurNom = document.getElementById('missNom');
             erreurNom.textContent = "Caractère alphabétique uniquement.";
