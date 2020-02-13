@@ -9,8 +9,8 @@ const mas = document.getElementById('mas');
 const fem = document.getElementById('fem');
 
 /* Les regex afin de veiller au bon remplissage du formulaire */
-const regexNom = /^[a-zA-Z]+$/;
-const regexPrenom =  /^[a-zA-Z]+$/;
+const regexNom = /^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ_\s-]+$/;
+const regexPrenom =  /^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ_\s-]+$/;
 const regexEmail = /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/;
 const regexCp = /[0-9]{5}|^$/;
 
@@ -94,7 +94,7 @@ Je lui donne un texte à l'intérieur, une couleur et la taille de la font */
             erreurEmail.style.fontSize = "20px";
         }
     }
-    else{         let erreurEmail = document.getElementById('missPrenom');
+    else{         let erreurEmail = document.getElementById('missEmail');
     erreurEmail.textContent = "";
  }
 
