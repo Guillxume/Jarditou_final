@@ -48,7 +48,7 @@
 
 <div class="container">  
   <!-- De ce que j'ai pu voir en PHP, l'action envoie le formulaire si il est bien rempli ( ce qui est vérifié avec la fonction verif), la méthode est POST c'est à dire qu'il affiche les données envoyées par l'utilisateur!-->
-  <form id="contact" action="http://bienvu.net/script.php" method="POST" onsubmit="return verif();">
+  <form id="contact" action="http://localhost/form.php" method="POST" onsubmit="return verif();">
     <h3>Nous contacter</h3>
     <h4>Remplissez ce formulaire, nous vous répondrons dans un délai de 32 jours.</h4>
     <!-- On divisera le formulaire en plusieurs div en fonction des informations demandées !-->
@@ -82,15 +82,15 @@
 					
 
                  
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Féminin" required id="fem" />
+                    <input class="form-check-input" type="radio" name="sexe" value="F" required id="fem" />
                     <label class="form-check-label col-2" for="fem">Féminin </label>
                 </div>
                 <div class="form-check">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Masculin" required id="mas"/>
+                        <input class="form-check-input" type="radio" name="sexe" value="M" required id="mas"/>
                         <label class="form-check-label col-2" for="mas">Masculin  </label>
                 </div>
                  <div class="form-check">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Masculin" required id="other"/>
+                        <input class="form-check-input" type="radio" name="sexe" value="O" required id="other"/>
                         <label class="form-check-label col-2" for="other">Autre  </label>
                 </div> 
 		</div>
@@ -142,7 +142,7 @@
                         <option value="" selected> - </option>    
                         <option value="1"> Réclamation (encore) </option>
                         <option value="2"> Devis </option>
-                        <option value="1"> Divers </option>
+                        <option value="3"> Divers </option>
                     </select>
                 <label for="demande">Votre demande* :</label>
                 <textarea name="Questions" required id="demande" rows="1"></textarea>
