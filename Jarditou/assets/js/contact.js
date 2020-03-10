@@ -12,7 +12,7 @@ const   bouton = document.getElementById('bouton'),
         regexNom = /^[/^[\wÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ_\s-]+$/i,
         regexPrenom =  /^[\wÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ_\s-]+$/i,
         regexEmail = /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/,
-        regexCp = /[0-9]{5}|^$/;
+        regexCp = /^[0-9]{5}$/;
 
 /* La fonction qui vérifie tout le formulaire */
 function verification(event)
@@ -146,7 +146,7 @@ Je lui donne un texte à l'intérieur, une couleur et la taille de la font */
         
     }
     else{ 
-        let missSexe = document.getElementById('sexe');
+        let erreurCp = document.getElementById('missCp');
         erreurCp.textContent = "";
     }
 }
